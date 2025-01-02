@@ -12,8 +12,10 @@
     "baseUrl": ".",
     "allowJs": true,
     "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
     "paths": {
-      "*": ["*", "*.js"]
+      "*": ["node_modules/*", "*"]
     }
   },
   "include": [
@@ -25,6 +27,7 @@
     "dist"
   ],
   "ts-node": {
-    "esm": true
+    "esm": true,
+    "experimentalSpecifier": true
   }
 }
